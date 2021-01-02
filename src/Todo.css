@@ -1,0 +1,67 @@
+.todo__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal > .modal__body {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+  left: 10px;
+  top: 10px;
+  background-color: rgba(165, 161, 161, 0.5);
+  border-radius: 5px;
+}
+
+.update__btn, .modal  h1 {
+  /* margin-left: 5px; */
+}
+
+.modal textarea, .modal textarea:focus {
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  width: 380px;
+  height: 250px;
+  margin: 5px;
+  padding: 5px;
+  background-color: wheat;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 80px;
+  height: 25px;
+}
+
+.btn-wrapper {
+  display: inline-block;
+  display: flex !important;
+  justify-content: space-between !important;
+
+  border-bottom: 2px solid #000;
+  max-width: 278px;
+}
+
+li.MuiListItem-root.list-item.MuiListItem-gutters {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+ul {
+  padding-inline-start: 40px;
+}
+
+@media (max-width: 600px) {
+  .modal > .modal__body {
+    width: 80% !important;
+  }
+
+  textarea {
+    width: 93% !important;
+    margin-right: 5px !important;
+  }
+}
